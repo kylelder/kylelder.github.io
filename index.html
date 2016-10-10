@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cutive+Mono" rel="stylesheet">
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>cred run club</title>
+</head>
+<body>
+  
+  <!-- <div id="instafeed" class="instafeed"></div> -->
+
+  <!-- <button id="reset" onclick="reset()">Reset</button> -->
+
+  <!-- <ul id="runner-list"></ul> -->
+
+  <header>
+	  <img src="http://static1.squarespace.com/static/545070b7e4b03ea792c15d50/t/57355a18f699bb43529921d9/1470195597680/?format=1500w">
+	  <span>run club</span>
+  </header>
+
+
+
+  <!-- <div class="hero"> -->
+
+    <div class="homepage-hero-module">
+	    <div class="video-container">
+	        <div class="filter"></div>
+	        <video autoplay loop class="fillWidth">
+	            <source src="https://f001.backblazeb2.com/file/publicSites/running-wo.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
+	            <!-- <source src="PATH_TO_WEBM" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser. -->
+	        </video>
+	    </div>
+	</div>
+  	<!-- <img src="http://i.imgur.com/4meahG9.jpg" style="width: 100%; visibility: hidden;"> -->
+  <!-- </div> -->
+
+
+  <div class="progressBar">
+  	<li class="statistics">
+        <span class="stats-label">miles run</span><span class="stats-value" id="totalMiles"></span>
+    </li>
+    <li class="statistics">
+        <span class="stats-label">goal</span><span class="stats-value">3,500</span>
+    </li>
+    <li class="statistics">
+        <button class="submit" onclick="addMiles()">submit new miles</button>
+    </li>
+
+  </div>
+
+
+<div id="page">
+
+
+  <table id="individual-miles" class="left">
+	<!-- <tbody id="runner-list">
+	    <tr>
+	        <th>runner</th><th>miles</th>
+	    </tr>
+	    <tr>
+	        <td class="runner">Brittany</td><td class="miles">293</td>
+	    </tr>
+	    <tr>
+	        <td class="runner">Caitlin</td><td class="miles">41</td>
+	    </tr>
+	        <tr>
+	        <td class="runner">Kayla</td><td class="miles">104</td>
+	    </tr>
+	        <tr>
+	        <td class="runner">Kyle</td><td class="miles">81.04</td>
+	    </tr>
+	    <tr>
+	        <td class="runner">Laura</td><td class="miles">20</td>
+	    </tr>
+	        <tr>
+	        <td class="runner">Leah</td><td class="miles">120</td>
+	    </tr>
+	        <tr>
+	        <td class="runner">Margaret</td><td class="miles">186.88</td>
+	    </tr>
+	    <tr>
+	        <td class="runner">Natalia</td><td class="miles">56.5</td>
+	    </tr>
+	    <tr>
+	        <td class="runner">Stephanie B.</td><td class="miles">13.3</td>
+	    </tr>
+	        <tr>
+	        <td class="runner">Stephanie W.</td><td class="miles">45</td>
+	    </tr>
+	</tbody> -->
+  </table>
+
+  <div id="instafeed" class="left"></div>
+
+</div>
+
+<div id="preFooter">
+    <a href="https://twitter.com/credpr" target="_blank">
+	    <span class="fa-stack fa-lg">
+	    	<i class="fa fa-circle fa-stack-2x fa-inverse brown"></i>
+		    <i class="fa fa-twitter fa-stack-1x white"></i>
+	    </span>
+    </a>
+    <a href="mailto:hello@credpr.com" target="_blank">
+	    <span class="fa-stack fa-lg">
+		    <i class="fa fa-circle fa-stack-2x fa-inverse brown"></i>
+		    <i class="fa fa-envelope-o fa-stack-1x white"></i>
+	    </span>
+    </a>                   
+</div>
+
+<footer id="footer" role="contentinfo">
+    <div class="footer-inner">
+
+	    <div class="footer_links">
+	        <a href="http://www.credpr.com/blog/">
+	            <span>cred blog</span>
+	        </a>
+	    </div>
+	    <div class="footer_links">
+	        <a href="/http://www.credpr.com/client-highlights/">
+	            <span>Client Spotlights</span>
+	        </a>
+	    </div>
+    </div>
+
+	<div id="siteInfo">
+		<p class="text-align-center">credpr.com &nbsp; &nbsp;| &nbsp;&nbsp;600 California Street - FL 12 &nbsp;| &nbsp; hello@credpr.com</p>
+	</div>
+</footer>
+
+<div id="instaPop" style="display: none;">
+	<a class="insta_link"><img class="insta_large"></a>
+</div>
+
+<div id="lightbox" style="display: none;">
+	<div class="addmiles">
+
+	<div class="close"><i class="fa fa-times"></i></div>
+
+	<h1>submit your miles</h1>
+
+		<div class="dropdown">
+		<form id="miles">
+		<input onclick="dropdown()" placeholder="name" class="dropbtn" id="name" name="name"></input>
+
+			<div id="myDropdown" class="dropdown-content">
+
+			<!-- <input type="text" placeholder="Search.." id="searchInput" onkeyup="filterFunction()"></input> -->
+
+				<ul class="dropdown-menu" aria-labelledby="myTabDrop1" id="team-feeds">
+				    <li>
+				        <a class="members" onClick="formName(this.id)" id="Brittany">Brittany</a>
+				    </li>
+				    <li>
+				        <a class="members" onClick="formName(this.id)" id="Caitlin">Caitlin</a>
+				    </li>
+				    <li>
+				        <a class="members" onClick="formName(this.id)" id="Jackie">Jackie</a>
+				    </li>
+				    <li>
+				        <a class="members" onClick="formName(this.id)" id="Kyle">Kyle</a>
+				    </li>
+				    <li>
+				        <a class="members" onClick="formName(this.id)" id="Laura">Laura</a>
+				    </li>
+				    <li>
+				        <a class="members" onClick="formName(this.id)" id="Leah">Leah</a>
+				    </li>
+				    <li>
+				        <a class="members" onClick="formName(this.id)" id="Margaret">Margaret</a>
+				    </li>
+				    <li>
+				        <a class="members" onClick="formName(this.id)" id="Natalia">Natalia</a>
+				    </li>
+				    <li>
+				        <a class="members" onClick="formName(this.id)" id="SB">Stephanie B.</a>
+				    </li>
+				    <li>
+				        <a class="members" onClick="formName(this.id)" id="SW">Stephanie W.</a>
+				    </li>
+				</ul>
+			</div>
+		
+		</div>
+
+		<input type="text" id="milesRan" name="milesRan" class="milesInput" placeholder="miles ran">
+
+		<div class="submitBtnWrapper">
+			<button type="submit" class="submitBtn">submit</button>
+			<div class="thanks">thanks!</div>
+		</div>
+
+		</form>
+
+	</div>
+</div>
+
+
+<form id="totals" action="#" onsubmit="populatePage()">
+  <input type="submit" value="populate Miles" class="total-submit">
+</form>
+
+<form id="runners-totals" action="#" onsubmit="populateTable()">
+  <input type="submit" value="Generate Runners Table" class="runners-total-submit">
+</form>
+
+
+<!-- <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+<script src="https://use.fontawesome.com/7a013b7dfe.js"></script>
+<script src="https://gist.githubusercontent.com/zachdrago/c1e622b3e86bd1cc93f8da500bdeb431/raw/265df32cdc458b96bb3876e8ec0c9bd85b241f53/insta.js"></script>
+<script src="https://gist.githubusercontent.com/zachdrago/c1e622b3e86bd1cc93f8da500bdeb431/raw/d2b04ea07bcb12acce5739a9fb75c4a046d7ec6d/js.js"></script>
+<script src="https://gist.githubusercontent.com/zachdrago/c1e622b3e86bd1cc93f8da500bdeb431/raw/548e8ebe7aae810b21123ceacd79a04c90262b25/lightbox.js"></script>
+<script src="https://gist.githubusercontent.com/zachdrago/c1e622b3e86bd1cc93f8da500bdeb431/raw/521f9eb7d0edf8b20edbe43b07ff21f2e2a6069b/pouch.js"></script>
+<script src="https://gist.githubusercontent.com/zachdrago/c1e622b3e86bd1cc93f8da500bdeb431/raw/ca25d42db31a38e6e3af9b6d2b71ed3c1f6d3716/app.js"></script> -->
+
+  <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+  <script src="https://use.fontawesome.com/7a013b7dfe.js"></script>
+  <script src="js/instafeed.js"></script>
+  <script src="js/js.js"></script>
+  <script src="js/lightboxme.js"></script>
+  <!-- <script src="js/pouchdb.js"></script> -->
+  <!-- <script src="js/app.js"></script> -->
+  <script src="js/sheets.js"></script>
+</body>
+</html>
