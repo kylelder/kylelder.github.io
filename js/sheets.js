@@ -131,6 +131,7 @@ function populatePage() {
   );
   $('#totalMiles').html(totalMiles);
   $('.percentage').html(percentage);
+  $('.myprogress').width(percentage);
   return false;
 }
 
