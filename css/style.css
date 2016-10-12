@@ -107,16 +107,17 @@ header span {
 	letter-spacing: 2px;
 	font-weight: 500;
 	font-style: normal;
-	margin: 15px -20px 0 0;
-	padding: 5px;
-	border-radius: 3px
+	margin: 15px -22px 0 0;
+	padding: 5px 6px;
+	max-width: 45px;
+	border-radius: 3px;
 }
 
 .percentage:before {
 	content: '';
 	position: absolute;
 	bottom: 100%;
-	margin-left: 8px;
+	margin-left: 11px;
 	margin-bottom: -15px;
 	width: 0;
 	height: 0;
