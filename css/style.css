@@ -77,7 +77,6 @@ header span {
 	vertical-align: middle;
 	padding-top: 0;
 	padding-bottom: 2px;
-	margin-bottom: 25px;
 	border-top: 1px solid #4d4d4d;
 	border-bottom: 0
 }
@@ -94,6 +93,10 @@ header span {
     width: 11%;
     height: 100%;
     background-color: #2b549e;
+}
+
+.percentage {
+	float: right;
 }
 
 .statistics {
@@ -170,7 +173,7 @@ header span {
 
 #page {
 	width: 100%;
-	padding: 80px 150px;
+	padding: 105px 150px 80px;
 	display: inline-block;
 }
 
