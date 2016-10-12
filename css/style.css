@@ -171,11 +171,11 @@ header span {
 	display: inline-block;
 	margin-left: 15%;
 	max-height: 450px;
-	overflow: scroll;
+	overflow-y: scroll;
 }
 
 .insta_pic  {
-	width: 150px;
+	width: 33%;
 	height: 150px;
 	background-size: 150% !important;
 	display: inline-block;
