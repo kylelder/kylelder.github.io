@@ -130,7 +130,7 @@ function populatePage() {
     }
   );
   $('#totalMiles').html(totalMiles);
-  alert(percentage);
+  $('.percentage').html(percentage);
   return false;
 }
 
