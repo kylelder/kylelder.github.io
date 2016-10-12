@@ -183,7 +183,7 @@ header span {
 }
 
 #instafeed::-webkit-scrollbar-thumb {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+    -webkit-box-shadow: inset 0 0 6px rgba(43, 84, 158, 0.7);
 }
 
 .insta_pic  {
