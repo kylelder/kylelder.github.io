@@ -107,21 +107,22 @@ header span {
 	letter-spacing: 2px;
 	font-weight: 500;
 	font-style: normal;
-	margin: 14px -20px 0 0;
+	margin: 15px -20px 0 0;
 	padding: 5px;
+	border-radius: 3px
 }
 
 .percentage:before {
-	content:'';
-    position: absolute;
-    bottom: 100%;
-    left: 50%;
-    margin-left: -50px;
-    width: 0;
-    height: 0;
-    border-bottom: solid 40px #2b549e;
-    border-left: solid 50px transparent;
-    border-right: solid 50px transparent;
+	content: '';
+	position: absolute;
+	bottom: 100%;
+	margin-left: 8px;
+	margin-bottom: -15px;
+	width: 0;
+	height: 0;
+	border-bottom: solid 4px #2b549e;
+	border-left: solid 5px transparent;
+	border-right: solid 5px transparent;
 }
 
 .statistics {
