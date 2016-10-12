@@ -447,7 +447,7 @@ tr:nth-child(even) {
     border-right: none;
     border-left: none;
     position: relative;
-    margin-top: -37px;
+    /*margin-top: -37px;*/
 }
 .no-video .video-container video,
 .touch .video-container video {
