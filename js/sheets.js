@@ -122,12 +122,15 @@ $.ajax({
 
 function populatePage() {
   var totalMiles = "";
+  var percentage = "";
   theSheet.feed.entry.forEach(
     function(row) {
-      totalMiles = row.gsx$total.$t;   
+      totalMiles = row.gsx$total.$t;
+      percentage = row.gsx$percentage.$t;
     }
   );
   $('#totalMiles').html(totalMiles);
+  alert(percentage);
   return false;
 }
 
