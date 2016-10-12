@@ -97,6 +97,31 @@ header span {
 
 .percentage {
 	float: right;
+	color: white;
+	background: #2b549e;
+	font-family: "Raleway", Arial, sans-serif;
+	line-height: 1.25em;
+	font-size: 14px;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 2px;
+	font-weight: 500;
+	font-style: normal;
+	margin: 14px -20px 0 0;
+	padding: 5px;
+}
+
+.percentage:before {
+	content:'';
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -50px;
+    width: 0;
+    height: 0;
+    border-bottom: solid 40px #2b549e;
+    border-left: solid 50px transparent;
+    border-right: solid 50px transparent;
 }
 
 .statistics {
